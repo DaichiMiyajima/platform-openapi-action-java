@@ -17,11 +17,11 @@ List all cats
 ### Example
 ```java
 // Import classes:
-import com.miyajima.trial.ApiClient;
-import com.miyajima.trial.ApiException;
-import com.miyajima.trial.Configuration;
-import com.miyajima.trial.models.*;
-import com.miyajima.trial.api.CatsApi;
+import com.miyajima.trial02.ApiClient;
+import com.miyajima.trial02.ApiException;
+import com.miyajima.trial02.Configuration;
+import com.miyajima.trial02.models.*;
+import com.miyajima.trial02.api.CatsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -78,11 +78,11 @@ Info for a specific cat
 ### Example
 ```java
 // Import classes:
-import com.miyajima.trial.ApiClient;
-import com.miyajima.trial.ApiException;
-import com.miyajima.trial.Configuration;
-import com.miyajima.trial.models.*;
-import com.miyajima.trial.api.CatsApi;
+import com.miyajima.trial02.ApiClient;
+import com.miyajima.trial02.ApiException;
+import com.miyajima.trial02.Configuration;
+import com.miyajima.trial02.models.*;
+import com.miyajima.trial02.api.CatsApi;
 
 public class Example {
   public static void main(String[] args) {
