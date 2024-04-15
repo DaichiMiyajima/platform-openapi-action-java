@@ -17,11 +17,11 @@ List all docs
 ### Example
 ```java
 // Import classes:
-import com.miyajima.trial.ApiClient;
-import com.miyajima.trial.ApiException;
-import com.miyajima.trial.Configuration;
-import com.miyajima.trial.models.*;
-import com.miyajima.trial.api.DocsApi;
+import com.miyajima.trial01.ApiClient;
+import com.miyajima.trial01.ApiException;
+import com.miyajima.trial01.Configuration;
+import com.miyajima.trial01.models.*;
+import com.miyajima.trial01.api.DocsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -78,11 +78,11 @@ Info for a specific doc
 ### Example
 ```java
 // Import classes:
-import com.miyajima.trial.ApiClient;
-import com.miyajima.trial.ApiException;
-import com.miyajima.trial.Configuration;
-import com.miyajima.trial.models.*;
-import com.miyajima.trial.api.DocsApi;
+import com.miyajima.trial01.ApiClient;
+import com.miyajima.trial01.ApiException;
+import com.miyajima.trial01.Configuration;
+import com.miyajima.trial01.models.*;
+import com.miyajima.trial01.api.DocsApi;
 
 public class Example {
   public static void main(String[] args) {
