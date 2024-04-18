@@ -13,7 +13,7 @@
 
 package com.miyajima.trial02;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-18T12:02:22.745692334Z[Etc/UTC]", comments = "Generator version: 7.6.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-18T20:47:34.088126011Z[Etc/UTC]", comments = "Generator version: 7.6.0-SNAPSHOT")
 public class Configuration {
     public static final String VERSION = "1.0.1";
 
