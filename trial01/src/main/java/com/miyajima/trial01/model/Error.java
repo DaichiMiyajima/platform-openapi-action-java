@@ -49,7 +49,7 @@ import com.miyajima.trial01.JSON;
 /**
  * Error
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-15T21:31:20.897039364Z[Etc/UTC]", comments = "Generator version: 7.5.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-18T11:48:37.855686650Z[Etc/UTC]", comments = "Generator version: 7.6.0-SNAPSHOT")
 public class Error {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
