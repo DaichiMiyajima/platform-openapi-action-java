@@ -49,7 +49,7 @@ import com.miyajima.trial01.JSON;
 /**
  * Doc
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-18T11:48:37.855686650Z[Etc/UTC]", comments = "Generator version: 7.6.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-18T12:02:20.168186119Z[Etc/UTC]", comments = "Generator version: 7.6.0-SNAPSHOT")
 public class Doc {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
