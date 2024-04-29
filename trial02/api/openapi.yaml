@@ -3,7 +3,7 @@ info:
   license:
     name: MIT
   title: Swagger Catstore
-  version: 1.0.1
+  version: 1.0.2
 servers:
 - url: http://catstore.swagger.io/v1
 paths:
@@ -11,6 +11,14 @@ paths:
     get:
       operationId: listCats
       parameters:
+      - explode: false
+        in: header
+        name: x-request-id
+        required: true
+        schema:
+          format: uuid
+          type: string
+        style: simple
       - description: How many items to return at one time (max 102)
         explode: true
         in: query
@@ -49,6 +57,14 @@ paths:
     get:
       operationId: showCatById
       parameters:
+      - explode: false
+        in: header
+        name: x-request-id
+        required: true
+        schema:
+          format: uuid
+          type: string
+        style: simple
       - description: The id of the cat to retrieve
         explode: false
         in: path

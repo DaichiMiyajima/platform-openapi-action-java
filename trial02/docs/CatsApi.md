@@ -10,7 +10,7 @@ All URIs are relative to *http://catstore.swagger.io/v1*
 
 <a id="listCats"></a>
 # **listCats**
-> List&lt;Cat&gt; listCats(limit)
+> List&lt;Cat&gt; listCats(xRequestId, limit)
 
 List all cats
 
@@ -29,9 +29,10 @@ public class Example {
     defaultClient.setBasePath("http://catstore.swagger.io/v1");
 
     CatsApi apiInstance = new CatsApi(defaultClient);
+    UUID xRequestId = UUID.randomUUID(); // UUID | 
     Integer limit = 56; // Integer | How many items to return at one time (max 102)
     try {
-      List<Cat> result = apiInstance.listCats(limit);
+      List<Cat> result = apiInstance.listCats(xRequestId, limit);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CatsApi#listCats");
@@ -48,6 +49,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
+| **xRequestId** | **UUID**|  | |
 | **limit** | **Integer**| How many items to return at one time (max 102) | [optional] |
 
 ### Return type
@@ -71,7 +73,7 @@ No authorization required
 
 <a id="showCatById"></a>
 # **showCatById**
-> Cat showCatById(catId)
+> Cat showCatById(xRequestId, catId)
 
 Info for a specific cat
 
@@ -90,9 +92,10 @@ public class Example {
     defaultClient.setBasePath("http://catstore.swagger.io/v1");
 
     CatsApi apiInstance = new CatsApi(defaultClient);
+    UUID xRequestId = UUID.randomUUID(); // UUID | 
     String catId = "catId_example"; // String | The id of the cat to retrieve
     try {
-      Cat result = apiInstance.showCatById(catId);
+      Cat result = apiInstance.showCatById(xRequestId, catId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CatsApi#showCatById");
@@ -109,6 +112,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
+| **xRequestId** | **UUID**|  | |
 | **catId** | **String**| The id of the cat to retrieve | |
 
 ### Return type

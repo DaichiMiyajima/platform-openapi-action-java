@@ -10,7 +10,7 @@ All URIs are relative to *http://docstore.swagger.io/v1*
 
 <a id="listDocs"></a>
 # **listDocs**
-> List&lt;Doc&gt; listDocs(limit)
+> List&lt;Doc&gt; listDocs(xRequestId, limit)
 
 List all docs
 
@@ -29,9 +29,10 @@ public class Example {
     defaultClient.setBasePath("http://docstore.swagger.io/v1");
 
     DocsApi apiInstance = new DocsApi(defaultClient);
+    UUID xRequestId = UUID.randomUUID(); // UUID | 
     Integer limit = 56; // Integer | How many items to return at one time (max 102)
     try {
-      List<Doc> result = apiInstance.listDocs(limit);
+      List<Doc> result = apiInstance.listDocs(xRequestId, limit);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DocsApi#listDocs");
@@ -48,6 +49,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
+| **xRequestId** | **UUID**|  | |
 | **limit** | **Integer**| How many items to return at one time (max 102) | [optional] |
 
 ### Return type
@@ -71,7 +73,7 @@ No authorization required
 
 <a id="showDocById"></a>
 # **showDocById**
-> Doc showDocById(docId)
+> Doc showDocById(xRequestId, docId)
 
 Info for a specific doc
 
@@ -90,9 +92,10 @@ public class Example {
     defaultClient.setBasePath("http://docstore.swagger.io/v1");
 
     DocsApi apiInstance = new DocsApi(defaultClient);
+    UUID xRequestId = UUID.randomUUID(); // UUID | 
     String docId = "docId_example"; // String | The id of the doc to retrieve
     try {
-      Doc result = apiInstance.showDocById(docId);
+      Doc result = apiInstance.showDocById(xRequestId, docId);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DocsApi#showDocById");
@@ -109,6 +112,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
+| **xRequestId** | **UUID**|  | |
 | **docId** | **String**| The id of the doc to retrieve | |
 
 ### Return type
